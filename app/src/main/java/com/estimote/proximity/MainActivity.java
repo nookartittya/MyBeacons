@@ -10,6 +10,7 @@ import com.estimote.mustard.rx_goodness.rx_requirements_wizard.RequirementsWizar
 import com.estimote.proximity.estimote.ProximityContentAdapter;
 import com.estimote.proximity.estimote.ProximityContentManager;
 
+
 import java.util.List;
 
 import kotlin.Unit;
@@ -25,10 +26,14 @@ public class MainActivity extends AppCompatActivity {
     private ProximityContentManager proximityContentManager;
     private ProximityContentAdapter proximityContentAdapter;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
 
         proximityContentAdapter = new ProximityContentAdapter(this);
         GridView gridView = findViewById(R.id.gridView);
